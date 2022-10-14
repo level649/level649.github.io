@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/work.css">
+    <link rel="stylesheet" href="./js/work.js">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">   
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"> </script>
+</head>
+<body>
+    <div class="nav">
+        <img src="./img/Arsenal.jpg">
+        <span class="title"><a href="./welcome.html">首页</a></span>
+        <span class="spacer"></span>
+        <a href="welcome.html">主页</a>
+        <a href="detial.html">个人</a>  
+        <a href="life.html">生活</a>
+        
+    </div>
+    
+    <div id="dream-container">
+     <!-- 轮播图 -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ><img src="./img/Cannavaro.jpg"></div>
+                <div class="swiper-slide" ><img src="./img/kafu.jpg"></div>
+                <div class="swiper-slide" ><img src="./img/Messi.jpg"></div>
+                <div class="swiper-slide" ><img src="./img/Carlos.jpg"></div>
+                <div class="swiper-slide" ><img src="./img/Beckham.jpg"></div>
+                <div class="swiper-slide" ><img src="./img/Nesta.jpg"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    
+
+    <!-- 工作 -->
+    <div id="big-dream">
+        <!-- 第一块 -->
+        <div class="first-dream">
+            <!-- 小标题 -->
+            <div class="small">
+                <span>工作区</span>
+            </div>
+            <!-- 图片区 -->
+            <ul class="some-img">
+                <li><img src="./img/Vieira.jpg"></li>
+                <li><img src="./img/Ronaldinhojpg.jpg"></li>
+                <li><img src="./img/Iniesta.jpg"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 工作 -->
+    <div id="big-dream">
+        <!-- 第一块 -->
+        <div class="first-dream">
+            <!-- 小标题 -->
+            <div class="small">
+                <span>工作区</span>
+            </div>
+            <!-- 图片区 -->
+            <ul class="some-img">
+                <li><img src="./img/Vieira.jpg"></li>
+                <li><img src="./img/Ronaldinhojpg.jpg"></li>
+                <li><img src="./img/Iniesta.jpg"></li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+
+<script >
+    var mySwiper = new Swiper ('.swiper', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    scrollbarDraggable : true ,
+    autoplay:true,//开启自动轮播
+    delay:1000,
+    speed:300,
+    pauseOnMouseEnter: true,
+    parallax: true,
+    reverseDirection: true, //开启反向自动轮播
+    grabCursor: true,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+  })        
+  mySwiper.scrollbar.$dragEl.css('background','#ff6600');
+</script>
+
+</html>
